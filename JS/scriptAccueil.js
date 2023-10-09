@@ -1,19 +1,42 @@
-document.querySelector("header>p").addEventListener("click", open);
+document.addEventListener('DOMContentLoaded', function () {
+    const layers = document.querySelectorAll('.layer');
+    const element1 = document.getElementById('element1');
+    const element2 = document.getElementById('element2');
 
-function open(){
-    form.style.display ="block";
-}
+    element1.addEventListener('click', function () {
+        scrollToTopWithParallax();
+    });
 
-document.querySelector("main>form").addEventListener("click", close);
+    element2.addEventListener('click', function () {
+        scrollToBottomWithParallax();
+    });
 
-function close(){
-    form.style.display ="none";
-}
+    window.addEventListener('scroll', function () {
+        let yOffset = window.scrollY;
 
-window.addEventListener("click", window);
+        layers.forEach(function (layer, index) {
+            let speed = 0.5 * (index + 1);
+            layer.style.transform = `translateY(${yOffset * speed}px)`;
+        });
+    });
 
-function window(event){
-    if(event.target === form){
-        close();
-    };
-}
+    function scrollToTopWithParallax() {
+        // Implement parallax effect for scrolling to the top
+        // Update the background position or use CSS transitions/animations
+        layers.forEach(function (layer) {
+            layer.style.transform = 'translateY(0)';
+        });
+        // Additional animations or adjustments as needed
+    }
+
+    function scrollToBottomWithParallax() {
+        // Implement parallax effect for scrolling to the bottom
+        // Update the background position or use CSS transitions/animations
+        layers.forEach(function (layer, index) {
+            let speed = 0.5 * (index + 1);
+            let scrollDistance = window.innerHeight * speed;
+            layer.style.transform = `translateY(${scrollDistance}px)`;
+        });
+        // Additional animations or adjustments as needed
+    }
+});
