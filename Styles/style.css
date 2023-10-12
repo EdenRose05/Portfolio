@@ -1,18 +1,15 @@
-/* font-family: 'Anek Bangla', sans-serif;
-font-family: 'Arima', cursive;
-font-family: 'Bitter', serif;
-font-family: 'Frank Ruhl Libre', serif;
-font-family: 'Handjet', cursive;
-font-family: 'Ibarra Real Nova', serif;
-font-family: 'Manrope', sans-serif;
-font-family: 'Sofia Sans Condensed', sans-serif; */
+/* font-family: 'Anek Bangla', sans-serif; ouiiiiii
+font-family: 'Arima', cursive; mehh
+font-family: 'Frank Ruhl Libre', serif; moui
+*/
 body{
     margin: 0;
     scroll-behavior: smooth;
     padding: 0;
     overflow: hidden;
+    font-family: 'Anek Bangla', sans-serif;
 }
-.background {
+/* .background {
     width: 100%;
     position: relative;
     height: 100vh;
@@ -54,10 +51,22 @@ img{
 #layer6 {
     background-size: cover;
     z-index: 6;
-}
+} */
 .content {
     position: relative;
-    z-index: 7; /* Content should be on top of layers */
+    z-index: 7;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1500px;
+    height: 400px;
+    position: absolute;
+    top: -400px;
+    z-index: 8;
 }
 header{
     display: flex;
@@ -77,4 +86,15 @@ main{
     align-items: center;
     text-align: center;
     margin-top: 100px;
+}
+button{
+    border: none;
+    background-color: rgb(137, 98, 151);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px;
+    color: aliceblue;
 }
