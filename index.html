@@ -13,10 +13,16 @@
 <body>
     <div class="content">
         <div id="contact" class="contact viewport">
+            <nav>
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#0" stroke="#171C36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                <a id="logo" href="#">
+                    <img src="Img/Logo.svg" alt="logo" loading="lazy">
+                </a>
+            </nav>
             <h2>Contactez-moi!</h2>
             <a href="#">E-mail: anaisschutz0309@gmail.com</a>
-            <a href="#">LinkedIn: </a>
-            <a href="#">Github: </a>
+            <a href="https://www.linkedin.com/in/ana%C3%AFsschutz/">LinkedIn: Anaïs Schutz </a>
+            <a href="https://github.com/EdenRose05">Github: EdenRose05</a>
             <div id="button">back to accueil</div>
         </div>
         <div id="accueil" class="accueil viewport">
@@ -30,12 +36,18 @@
                 <h1>Bienvenue dans mon monde...</h1>
                 <p>Je m'appelle Anaïs Schutz et j'ai 21 ans.<br>Découvrez mon univers, mes créations et mes ambitions, ici.</p>
                 <button id="element1"><b>Contactez-moi!</b></button>
-                <button id="element2"><b>Explorer mes projets</b></button>
+                <button id="element2"><b>Explorer!</b></button>
             </div>
         </div>
         <div id="grid" class="grid viewport">
+            <nav>
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#0" stroke="#171C36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                <a id="logo1" href="#">
+                    <img src="Img/Logo.svg" alt="logo" loading="lazy">
+                </a>
+            </nav>
             <div class="item">
-                <a href="#" class="link">
+                <a href="#" class="link" id="proposLink">
                     <div class="bg"></div>
                     <div class="propos">
                         <h3>A propos</h3>
@@ -43,7 +55,7 @@
                 </a>
             </div>
             <div class="item">
-                <a href="#" class="link">
+                <a href="#" class="link" id="projetsLink">
                     <div class="bg"></div>
                     <div class="projets">
                         <h3>Mes projets</h3>
@@ -51,14 +63,35 @@
                 </a>
             </div>
             <div class="item">
-                <a href="#" class="link">
+                <a href="#" class="link" id="competsLink">
                     <div class="bg"></div>
                     <div class="compets">
                         <h3>Ce que je sais faire</h3>
                     </div>
                 </a>
             </div>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span id="close" style="cursor: pointer;">&times;</span>
+                    <div id="contentContainer"></div>
+                </div>
+            </div>
             <div id="link4">back to accueil</div>
+
+            <div id="propos" style="display: none;">
+                <h2>Je parle de moi</h2>
+                <p>Je m'appelle Anaïs Schutz et j'ai 21 ans.<br>Je viens du Bas-Rhin et je suis actuellement en 2e année de BUT MMI à Mulhouse, dans le parcours développement web.<br>J'aime tout ce qui touche au web, mais j'adore aussi tout ce qui est créatif, ce qui fait de moi un esprit polyvalent.<br>J'aime faire le design d'un site web, tout comme l'intégrer, mais j'aime aussi faire des logos et des identités visuelles.<br>Quand je ne suis pas devant un ordi, j'adore dessiner, crocheter, tricoter. J'aime tout ce qui est créatif et manuel, mais j'aime aussi me balader, écouter de la musique et voir ma famille et mes amis. </p>
+            </div>
+        
+            <div id="projets" style="display: none;">
+                <h2>Mes projets</h2>
+                <p>Voici quelques projets que j'ai pu réaliser, mais aussi les projets que j'aimerais réaliser ou qui sont en cours de réalisation.</p>
+            </div>
+        
+            <div id="compets" style="display: none;">
+                <h2>Ce que je sais faire</h2>
+                <p>Voici mon CV, vous pouvez le télécharger.<br> Vous pouvez aussi voir les versions précédentes de mon CV.</p>
+            </div>
         </div>
     </div>
     <script src="JS/scriptAccueil.js"></script>

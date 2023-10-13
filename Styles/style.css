@@ -8,6 +8,7 @@ body{
     padding: 0;
     height: 100%;
     font-family: 'Anek Bangla', sans-serif;
+    background-color: rgb(192, 241, 165);
 }
 .contact>.a{
     text-decoration: none;
@@ -34,6 +35,10 @@ a{
     align-items: center;
     text-align: center;
     transform: translateY(-100%);
+    padding-top: 100px;
+}
+.contact>a{
+    display: block;
 }
 .accueil{
     display: block;
@@ -50,21 +55,28 @@ a{
     margin: 0 15px 30px;
     overflow: hidden;
     border-radius: 28px;
+    box-shadow: 4px 5px 25px 12px rgba(188, 188, 188, 0.24);
+    box-shadow: 4px 5px 11px -1px rgba(147, 147, 147, 0.5);
 }
 .link {
     display: block;
     padding: 30px 20px;
-    background-color: rgb(137, 98, 151);
+    background-color: rgb(171, 129, 208);
     overflow: hidden;
     position: relative;
+    color: white;
+    transition: all 0.5s ease;
 }
-.link:hover .bg {
+.link:not(.modal-open):hover .bg {
     transform: scale(10);
+}
+.link:not(.modal-open):hover{
+    color: black;
 }
 .bg {
     height: 128px;
     width: 128px;
-    background-color: #f9b234;
+    background-color: #ffa0f7;
     z-index: 1;
     position: absolute;
     top: -75px;
@@ -72,11 +84,11 @@ a{
     border-radius: 50%;
     transition: all 0.5s ease;
 }
-.item:nth-child(2n) .bg {
-    background-color: #3ecd5e;
-}
 .item:nth-child(3n) .bg {
-    background-color: #e44002;
+    background-color: #ffee8d;
+}
+.item:nth-child(4n) .bg {
+    background-color: #90bcff;
 }
 .propos{
     position: relative;
@@ -90,6 +102,28 @@ a{
     position: relative;
     z-index: 2;
 }
+.modal{
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5749848e;
+    z-index: 3;
+}
+.modal-content{
+    background-color: rgb(171, 129, 208);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: justify;
+    width: 50%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
 nav{
     display: flex;
     align-items: center;
@@ -101,6 +135,9 @@ nav{
     right: 0;
     top: 0;
 }
+h1{
+    margin-top: 100px;
+}
 .txt{
     display: flex;
     flex-direction: column;
@@ -110,7 +147,7 @@ nav{
 }
 button{
     border: none;
-    background-color: rgb(137, 98, 151);
+    background-color: rgb(171, 129, 208);
     border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
