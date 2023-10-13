@@ -11,34 +11,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla&family=Arima&family=Bitter&family=Frank+Ruhl+Libre&family=Handjet&family=Ibarra+Real+Nova&family=Manrope&family=Sofia+Sans+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background">
-        <!-- <img class="layer" height="56px" width="96px" id="layer1" loading="lazy" src="Img/bg.png"></img>
-        <img class="layer" height="56px" width="96px" id="layer2" loading="lazy" src="Img/moon.png"></img>
-        <img class="layer" height="56px" width="96px" id="layer3" loading="lazy" src="Img/clouds.png"></img>
-        <img class="layer" height="56px" width="96px" id="layer4" loading="lazy" src="Img/stars.png"></img>
-        <img class="layer" height="56px" width="96px" id="layer5" loading="lazy" src="Img/sky.png"></img>
-        <img class="layer" height="56px" width="96px" id="layer6" loading="lazy" src="Img/ground.png"></img> -->
-        <div class="content">
-            <div class="contact">
-                <h2>Contactez-moi!</h2>
-                <a src="#">E-mail: anaisschutz0309@gmail.com</a>
-                <a src="#">LinkedIn: </a>
-                <a src="#">Github: </a>
-            </div>
-            <header>
-                <a src="contact.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#0" stroke="#171C36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
-                </a>
-                <a src="#">
+    <div class="content">
+        <div id="contact" class="contact viewport">
+            <h2>Contactez-moi!</h2>
+            <a href="#">E-mail: anaisschutz0309@gmail.com</a>
+            <a href="#">LinkedIn: </a>
+            <a href="#">Github: </a>
+            <div id="button">back to accueil</div>
+        </div>
+        <div id="accueil" class="accueil viewport">
+            <nav>
+                <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#0" stroke="#171C36" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                <a href="#">
                     <img src="Img/Logo.svg" alt="logo" loading="lazy">
                 </a>
-            </header>
-            <main>
+            </nav>
+            <div class="txt">
                 <h1>Bienvenue dans mon monde...</h1>
                 <p>Je m'appelle Anaïs Schutz et j'ai 21 ans.<br>Découvrez mon univers, mes créations et mes ambitions, ici.</p>
                 <button id="element1"><b>Contactez-moi!</b></button>
                 <button id="element2"><b>Explorer mes projets</b></button>
-            </main>
+            </div>
+        </div>
+        <div id="grid" class="grid viewport">
+            <div class="item">
+                <a href="#" class="link">
+                    <div class="bg"></div>
+                    <div class="propos">
+                        <h3>A propos</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="link">
+                    <div class="bg"></div>
+                    <div class="projets">
+                        <h3>Mes projets</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#" class="link">
+                    <div class="bg"></div>
+                    <div class="compets">
+                        <h3>Ce que je sais faire</h3>
+                    </div>
+                </a>
+            </div>
+            <div id="link4">back to accueil</div>
         </div>
     </div>
     <script src="JS/scriptAccueil.js"></script>

@@ -6,69 +6,91 @@ body{
     margin: 0;
     scroll-behavior: smooth;
     padding: 0;
-    overflow: hidden;
+    height: 100%;
     font-family: 'Anek Bangla', sans-serif;
 }
-/* .background {
-    width: 100%;
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.contact>.a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
-.layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
-img{
-    image-rendering: pixelated;
+.grid>.item>.a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
-#layer1 {
-    background-size: cover;
-    z-index: 1;
-}
-
-#layer2 {
-    background-size: cover;
-    z-index: 2;
-}
-#layer3 {
-    background-size: cover;
-    z-index: 3;
-}
-
-#layer4 {
-    background-size: cover;
-    z-index: 4;
-}
-#layer5 {
-    background-size: cover;
-    z-index: 5;
-}
-
-#layer6 {
-    background-size: cover;
-    z-index: 6;
-} */
-.content {
-    position: relative;
-    z-index: 7;
+.viewport{
+    height: 100vh;transition: transform 0.5s ease-in-out;
 }
 .contact{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 1500px;
-    height: 400px;
-    position: absolute;
-    top: -400px;
-    z-index: 8;
+    transform: translateY(-100%);
 }
-header{
+.accueil{
+    display: block;
+}
+.grid{
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(100%);
+}
+.item {
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+.link {
+    display: block;
+    padding: 30px 20px;
+    background-color: rgb(137, 98, 151);
+    overflow: hidden;
+    position: relative;
+}
+.link:hover .bg {
+    transform: scale(10);
+}
+.bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.item:nth-child(2n) .bg {
+    background-color: #3ecd5e;
+}
+.item:nth-child(3n) .bg {
+    background-color: #e44002;
+}
+.propos{
+    position: relative;
+    z-index: 2;
+}
+.projets{
+    position: relative;
+    z-index: 2;
+}
+.compets{
+    position: relative;
+    z-index: 2;
+}
+nav{
     display: flex;
     align-items: center;
     width: fit-content;
@@ -79,13 +101,12 @@ header{
     right: 0;
     top: 0;
 }
-main{
+.txt{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
 }
 button{
     border: none;
