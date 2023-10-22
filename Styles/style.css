@@ -8,7 +8,7 @@ body{
     padding: 0;
     height: 100%;
     font-family: 'Anek Bangla', sans-serif;
-    background-color: rgb(192, 241, 165);
+    background:linear-gradient(45deg ,rgb(192, 241, 165), rgb(140, 232, 173));
 }
 .contact>.a{
     text-decoration: none;
@@ -114,7 +114,7 @@ a{
 .modal-content{
     background-color: rgb(171, 129, 208);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: justify;
     width: 50%;
     position: fixed;
@@ -149,10 +149,48 @@ button{
     border: none;
     background-color: rgb(171, 129, 208);
     border-radius: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 10px 20px;
     margin: 10px;
     color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#link4{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(171, 129, 208);
+    width: fit-content;
+    color:aliceblue;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50%;
+    bottom: 25%;
+    transform: translateX(50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(171, 129, 208);
+    width: fit-content;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50%;
+    bottom: 25%;
+    transform: translateX(50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#button:hover{
+    background-color: rebeccapurple;
+}
+#link4:hover{
+    background-color: rebeccapurple;
+}
+button:hover{
+    background-color: rebeccapurple;
 }
