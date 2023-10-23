@@ -10,24 +10,84 @@ body{
     font-family: 'Anek Bangla', sans-serif;
     background:linear-gradient(45deg ,rgb(192, 241, 165), rgb(140, 232, 173));
 }
-.contact>.a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+nav{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    position: fixed;
+    right: 0;
+    top: 0;
 }
-a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+h1{
+    margin-top: 100px;
 }
-.grid>.item>.a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+.txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+/* style boutons */
+
+button{
+    border: none;
+    background-color: rgb(171, 129, 208);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: rebeccapurple;
+}
+#button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(171, 129, 208);
+    width: fit-content;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50%;
+    bottom: 25%;
+    transform: translateX(50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#button:hover{
+    background-color: rebeccapurple;
+}
+#link4{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(171, 129, 208);
+    width: fit-content;
+    color:aliceblue;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 50%;
+    bottom: 25%;
+    transform: translateX(50%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+#link4:hover{
+    background-color: rebeccapurple;
+}
+/* définit les différentes parties que je souhaite afficher en fonction de là où on se trouve sur la page */
 .viewport{
     height: 100vh;transition: transform 0.5s ease-in-out;
 }
+/* style contact */
 .contact{
     display: none;
     flex-direction: column;
@@ -37,12 +97,27 @@ a{
     transform: translateY(-100%);
     padding-top: 100px;
 }
+/* style lien ds contact */
 .contact>a{
     display: block;
 }
+/* lien spécifique ds contact */
+.contact>.a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/* style liens généraux */
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/* accueil */
 .accueil{
     display: block;
 }
+/* style liens ds le grid, ds la 3e partie du site */
 .grid{
     display: none;
     grid-template-columns: 1fr 1fr 1fr;
@@ -51,6 +126,7 @@ a{
     text-align: center;
     transform: translateY(100%);
 }
+/* style cartes */
 .item {
     margin: 0 15px 30px;
     overflow: hidden;
@@ -66,18 +142,6 @@ a{
     position: relative;
     color: white;
     transition: all 0.5s ease;
-}
-.linke {
-    display: block;
-    padding: 30px 20px;
-    background-color: rgb(140, 232, 173);
-    overflow: hidden;
-    position: relative;
-    color: black;
-    transition: all 0.5s ease;
-}
-.linke:not(.modal-open):hover .bg {
-    transform: scale(10);
 }
 .link:not(.modal-open):hover .bg {
     transform: scale(10);
@@ -102,6 +166,25 @@ a{
 .item:nth-child(4n) .bg {
     background-color: #90bcff;
 }
+.grid>.item>.a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/* style cartes dans projets */
+.linke {
+    display: block;
+    padding: 30px 20px;
+    background-color: rgb(140, 232, 173);
+    overflow: hidden;
+    position: relative;
+    color: black;
+    transition: all 0.5s ease;
+}
+.linke:not(.modal-open):hover .bg {
+    transform: scale(10);
+}
+/* style modals */
 .propos{
     position: relative;
     z-index: 2;
@@ -134,77 +217,6 @@ a{
     top: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    width: fit-content;
-    gap: 10px;
-    padding-top: 10px;
-    padding-right: 20px;
-    position: fixed;
-    right: 0;
-    top: 0;
-}
-h1{
-    margin-top: 100px;
-}
-.txt{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-button{
-    border: none;
-    background-color: rgb(171, 129, 208);
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 10px;
-    color: aliceblue;
-    cursor: pointer;
-    transition: 0.5s;
-}
-#link4{
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: rgb(171, 129, 208);
-    width: fit-content;
-    color:aliceblue;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    right: 50%;
-    bottom: 25%;
-    transform: translateX(50%);
-    cursor: pointer;
-    transition: 0.5s;
-}
-#button{
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: rgb(171, 129, 208);
-    width: fit-content;
-    color: aliceblue;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    right: 50%;
-    bottom: 25%;
-    transform: translateX(50%);
-    cursor: pointer;
-    transition: 0.5s;
-}
-#button:hover{
-    background-color: rebeccapurple;
-}
-#link4:hover{
-    background-color: rebeccapurple;
-}
-button:hover{
-    background-color: rebeccapurple;
 }
 #portrait{
     width: 20%;
