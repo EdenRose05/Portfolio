@@ -67,6 +67,18 @@ a{
     color: white;
     transition: all 0.5s ease;
 }
+.linke {
+    display: block;
+    padding: 30px 20px;
+    background-color: rgb(140, 232, 173);
+    overflow: hidden;
+    position: relative;
+    color: black;
+    transition: all 0.5s ease;
+}
+.linke:not(.modal-open):hover .bg {
+    transform: scale(10);
+}
 .link:not(.modal-open):hover .bg {
     transform: scale(10);
 }
@@ -193,4 +205,23 @@ button{
 }
 button:hover{
     background-color: rebeccapurple;
+}
+#portrait{
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    align-self: flex-end;
+}
+#propos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
